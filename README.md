@@ -25,7 +25,7 @@ $.preloadImages(imageUrls);
 
 This method returns a jQuery Deferred object that will be resolved when all the images have been loaded, so you can add more handlers to it if you wish. 
 
-```javacript
+```javascript
 var deferred = $.preloadImages(imageUrls);
 
 deferred.always(function () {
