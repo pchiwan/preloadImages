@@ -1,7 +1,7 @@
 /********************
- * imagePreloader
+ * preloadImages
  * by Sílvia Mur Blanch aka PchiwaN
- * https://github.com/pchiwan/imagePreloader
+ * https://github.com/pchiwan/preloadImages
  *
  * NOTE: jQuery and a real browser are required (so no IE below 9, please)
  ********************/
