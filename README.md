@@ -8,7 +8,7 @@ Simply put: it fetches images and downloads them to your browser.
 
 
 # Why?
-I was playing around with [Masonry](http://masonry.desandro.com/) one day, testing cool CSS3 effects while dinamically loading pictures using infinite scroll... you know, having fun with JavaScript. I had been using the small plugin [imagesLoaded](http://desandro.github.io/imagesloaded/) -also by [desandro](https://github.com/desandro)- but, for some reason, it didn't work for me. Whenever I loaded new batches of images the Masonry was lost. At first I did what any curious developer would do: I went through the code, trying to find out what was going on. But I gave up soon because I decided to implement my own solution, with a different approach. Instead of asking 'You images done yet or what?', I will fetch them -preload them- so they'll be cached in the browser, thus making sure they'll already be downloadedwhen I need them.
+I was playing around with [Masonry](http://masonry.desandro.com/) one day, testing cool CSS3 effects while dinamically loading pictures using infinite scroll... you know, having fun with JavaScript. I had been using the small plugin [imagesLoaded](http://desandro.github.io/imagesloaded/) -also by [desandro](https://github.com/desandro)- but, for some reason, it didn't work for me. Whenever I loaded new batches of images the Masonry was lost. At first I did what any curious developer would do: I went through the code, trying to find out what was going on. But I gave up soon because I decided to implement my own solution, with a different approach. Instead of asking 'You images done yet or what?', I will fetch them -preload them- so they'll be cached in the browser, thus making sure they'll already be downloaded when I need them.
 
 
 # How does it work?
