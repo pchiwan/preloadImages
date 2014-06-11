@@ -34,7 +34,7 @@ a.button{
 	margin: 20px 0;
 	padding: 10px 5px;
 	font-size: 14px;
-	color: #666;
+	color: #fff;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -47,6 +47,7 @@ a.button{
 .rounded {
     border-radius: 3px;
     margin: 0 10px 10px 0;
+    width: 120px;
 }
 .loading {
     text-align: center;
@@ -54,4 +55,48 @@ a.button{
 }
 .loading img {
     width: 40px;
+}
+.animate{
+	animation-duration: .8s;
+	animation-fill-mode: both;
+	animation-name: popUp;
+	animation-timing-function: ease-in;
+	animation-direction: forwards;
+}
+@-webkit-keyframes popUp {
+	0% {
+		opacity: 0;
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: scale(0.4);
+	}
+
+	70% { 
+		opacity: .8;
+		-webkit-transform: scale(1.1); 
+		-webkit-animation-timing-function: ease-out; 
+	}
+	
+	100% { 
+		opacity: 1; 
+		-webkit-transform: scale(1); 		
+	}
+}
+
+@keyframes popUp {
+	0% {
+		opacity: 0;
+		transform-style: preserve-3d;
+		transform: scale(0.4);
+	}
+
+	70% { 
+		opacity: .8;
+		transform: scale(1.1); 
+		animation-timing-function: ease-out; 
+	}
+
+	100% { 
+		opacity: 1;
+		transform: scale(1);  
+	}
 }
