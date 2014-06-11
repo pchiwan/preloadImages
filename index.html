@@ -81,7 +81,7 @@
 <h1>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h1>
 
-<p>Here's a live demo. And, in case you didn't know, Arcade Fire rulez!</p>
+<p>Here's a live demo. I also made a jsfiddle out of it, and you can play with it <a href="http://jsfiddle.net/z2QuA/">here</a>. Oh! And, in case you didn't know, Arcade Fire rulez!</p>
 
 <div class="demo">  
   <button data-bind="text: 'Load more images', click: loadImages, visible: !loading()"></button>
@@ -90,7 +90,7 @@
   </div>
   <div class="wall" data-bind="visible: imagesLoaded">
     <!-- ko foreach: images -->
-    <img class="rounded animate" data-bind="attr: { src: $data }" alt="Arcade Fire" />
+    <img class="rounded animate" data-bind="attr: { src: $data }" title="Arcade Fire" />
     <!-- /ko -->
   </div>  
 </div>

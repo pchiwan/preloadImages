@@ -1,13 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Oregano);
 header{
 	/*
-	background: -moz-linear-gradient(top, #feccb1 0%, #ea5507 0%, #f17432 31%, #f9f6f4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feccb1), color-stop(0%,#ea5507), color-stop(31%,#f17432), color-stop(100%,#f9f6f4)); 
-	background: -webkit-linear-gradient(top, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%); 
-	background: -o-linear-gradient(top, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%); 
-	background: -ms-linear-gradient(top, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%);
-	background: linear-gradient(to bottom, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%);
+	background: -moz-linear-gradient(top, #0a77d5 50%, #73b1e7 76%, #d0e4f7 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#0a77d5), color-stop(76%,#73b1e7), color-stop(100%,#d0e4f7)); 
+	background: -webkit-linear-gradient(top, #0a77d5 50%,#73b1e7 76%,#d0e4f7 100%); 
+	background: -o-linear-gradient(top, #0a77d5 50%,#73b1e7 76%,#d0e4f7 100%); 
+	background: -ms-linear-gradient(top, #0a77d5 50%,#73b1e7 76%,#d0e4f7 100%); 
+	background: linear-gradient(to bottom, #0a77d5 50%,#73b1e7 76%,#d0e4f7 100%); 
 	*/
+	border-bottom: none;
 }
 header h1{
 	font-family: Oregano;
@@ -19,6 +20,9 @@ h1, h2, h3{
 }
 a.button{
 	font-family: Oregano;
+}
+#main-content h1:before{
+	content: "//";
 }
 .demo{
 	border: 1px solid #F2F2F2;
@@ -42,12 +46,12 @@ a.button{
 	background-color: #9DDCFF;
 }
 .wall {
-    padding-top: 20px;
+    padding-left: 10px;
 }
 .rounded {
     border-radius: 3px;
     margin: 0 10px 10px 0;
-    width: 120px;
+    width: 154px;
 }
 .loading {
     text-align: center;
