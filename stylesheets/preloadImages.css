@@ -8,18 +8,30 @@ header{
 	background: -ms-linear-gradient(top, #0a77d5 50%,#73b1e7 76%,#d0e4f7 100%); 
 	background: linear-gradient(to bottom, #0a77d5 50%,#73b1e7 76%,#d0e4f7 100%); 
 	*/
+	background: url("../images/bg.png") repeat-x scroll 0 0 #2E7BCF;
 	border-bottom: none;
 }
 header h1{
 	font-family: Oregano;
-	font-size: 80px;
+	font-size: 90px;
 	font-weight: bold;
+	text-shadow: 1px 3px #AAAAAA;
+}
+header h2{
+	font-weight: bold;
+	color: #A9DCFF;
+	font-size: 34px;
+	text-shadow: 1px 1px #666666;
+	width: auto;
 }
 h1, h2, h3{
 	font-family: Oregano !important;
 }
 a.button{
 	font-family: Oregano;
+}
+a.button small{
+	font-size: 15px;
 }
 #main-content h1:before{
 	content: "//";
