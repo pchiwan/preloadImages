@@ -114,7 +114,7 @@ var Demo = function () {
     'http://userserve-ak.last.fm/serve/126s/77605502.jpg'];
 
     //change this value to load more images in every batch
-    var batch = 8;
+    var batch = 10;
     
     this.images = ko.observableArray([]);
     this.imagesLoaded = ko.computed(function () {
