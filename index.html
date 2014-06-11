@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/preloadImages.css" media="screen" />    
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/pchiwan/preloadImages/master/preloadImages.jquery.js"></script>
+    <script type="text/javascript" src="javascripts/demo.js"></script>
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -76,7 +81,19 @@
 <h1>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h1>
 
-<p>You can play with my example jsfiddle <a href="http://jsfiddle.net/z2QuA/">here</a>.</p>
+<p>Here's a live demo. And, in case you didn't know, Arcade Fire rulez!</p>
+
+<div class="demo">
+  <button data-bind="text: 'Load more images', click: loadImages" style="margin-right: 10px" />
+  <div data-bind="visible: loading" class="loading">
+    <img src="http://cdn.nirmaltv.com/images/5-thumb.gif" alt="loading" />
+  </div>
+  <div class="wall" data-bind="visible: imagesLoaded">
+    <!-- ko foreach: images -->
+    <img class="rounded" data-bind="attr: { src: $data }" alt="Arcade Fire" />
+    <!-- /ko -->
+  </div>
+</div>
         </section>
 
         <aside id="sidebar">

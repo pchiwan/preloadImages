@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Oregano);
+header{
+	/*
+	background: -moz-linear-gradient(top, #feccb1 0%, #ea5507 0%, #f17432 31%, #f9f6f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feccb1), color-stop(0%,#ea5507), color-stop(31%,#f17432), color-stop(100%,#f9f6f4)); 
+	background: -webkit-linear-gradient(top, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%); 
+	background: -o-linear-gradient(top, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%); 
+	background: -ms-linear-gradient(top, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%);
+	background: linear-gradient(to bottom, #feccb1 0%,#ea5507 0%,#f17432 31%,#f9f6f4 100%);
+	*/
+	h1{
+		font-family: Oregano;
+		font-size: 80px;
+		font-weight: bold;
+	}
+}
+h1, h2, h3{
+	font-family: Oregano;
+}
+a.button{
+	font-family: Oregano;
+}
+.demo{
+	border: 1px solid #F2F2F2;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	text-align: center;
+}
+.demo button{
+	background-color: #9DDCFF;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+	margin: 20px 0;
+	padding: 10px 5px;
+	font-size: 14px;
+	color: #666;
+	text-shadow: 1px 1px #f2f2f2;
+}
+.wall {
+    padding-top: 20px;
+}
+.rounded {
+    border-radius: 3px;
+    margin: 0 10px 10px 0;
+}
+.loading {
+    text-align: center;
+    margin: 20px 0;
+}
+.loading img {
+    width: 40px;
+}
