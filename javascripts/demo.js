@@ -139,7 +139,7 @@ var Demo = function () {
     this.clear = function () {
         self.images([]);
     };
-}
+};
 
 $(document).ready(function () {
 
