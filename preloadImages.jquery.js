@@ -15,7 +15,7 @@
 		///	</summary>
 		/// <param name="images" type="Array">Collection of image urls that you want to preload.</param>
 		/// <param name="callback" type="function">Optional. Callback function that will executed when all the images have been loaded.</param>
-		/// <return>Deferred object that will be resolved when all the images have been loaded. You can add more handlers to it!</return>
+		/// <return>Promise object that will be resolved when all the images have been loaded. You can add more handlers to it!</return>
 		
 		var filter = function (array, iterator) {
 			/// <summary>Inspired by underscore.js: looks through each value in the list, returning an array of all the values that pass a truth test (predicate)</summary>
@@ -57,7 +57,7 @@
 			requested++;
 		}
 
-		return deferred;
+		return deferred.promise();
 	}
 
 })(jQuery);
