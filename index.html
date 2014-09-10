@@ -56,15 +56,15 @@
 
 </pre></div>
 
-<p>This method returns a jQuery Deferred object that will be resolved when all the images have been loaded, so you can add more handlers to it if you wish. </p>
+<p>This method returns a jQuery Promise object that will be resolved when all the images have been loaded, so you can add more handlers to it if you wish. </p>
 
-<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">deferred</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">preloadImages</span><span class="p">(</span><span class="nx">imageUrls</span><span class="p">);</span>
+<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">preloadImages</span><span class="p">(</span><span class="nx">imageUrls</span><span class="p">);</span>
 
-<span class="nx">deferred</span><span class="p">.</span><span class="nx">always</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="nx">promise</span><span class="p">.</span><span class="nx">always</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">//TODO</span>
 <span class="p">});</span>
 
-<span class="nx">deferred</span><span class="p">.</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="nx">promise</span><span class="p">.</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">//TODO</span>
 <span class="p">});</span>
 </pre></div>
