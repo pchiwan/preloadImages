@@ -23,16 +23,16 @@ $.preloadImages(imageUrls);
             
 ```
 
-This method returns a jQuery Deferred object that will be resolved when all the images have been loaded, so you can add more handlers to it if you wish. 
+This method returns a jQuery Promise object that will be resolved when all the images have been loaded, so you can add more handlers to it if you wish. 
 
 ```javascript
-var deferred = $.preloadImages(imageUrls);
+var promise = $.preloadImages(imageUrls);
 
-deferred.always(function () {
+promise.always(function () {
 	//TODO
 });
 
-deferred.fail(function () {
+promise.fail(function () {
 	//TODO
 });
 ```
